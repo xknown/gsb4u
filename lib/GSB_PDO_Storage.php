@@ -1,12 +1,14 @@
 <?php
 
+require 'GSB_IStorage.php';
+
 /**
  * Storage abstraction.  Should be easy to remap this to any
  *  sql-based database in any language.  This uses PHP's PDO, so with
  *  luck (and the right schema) you should be able to reuse in other
  *  databases under PHP.
  */
-class GSB_Storage implements GSB_IStorage {
+class GSB_PDO_Storage implements GSB_IStorage {
 
     /**
      * initialize the database connection

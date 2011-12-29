@@ -1,5 +1,7 @@
 <?php
 
+require 'GSB_IStorage.php';
+
 /**
  * Storage based on an existing WordPress database class.
  */
