@@ -1,12 +1,9 @@
 <?php
 
 /**
- * Storage abstraction.  Should be easy to remap this to any
- *  sql-based database in any language.  This uses PHP's PDO, so with
- *  luck (and the right schema) you should be able to reuse in other
- *  databases under PHP.
+ * Storage based on an existing WordPress database class.
  */
-class GSB_Storage {
+class GSB_WP_Storage implements GSB_IStorage {
 	/**
 	 * initialize the database connection
 	 */

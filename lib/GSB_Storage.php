@@ -6,7 +6,7 @@
  *  luck (and the right schema) you should be able to reuse in other
  *  databases under PHP.
  */
-class GSB_Storage {
+class GSB_Storage implements GSB_IStorage {
 
     /**
      * initialize the database connection
