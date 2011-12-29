@@ -16,7 +16,7 @@ class GSB_Updater {
     /** ctor
      *
      */
-    function __construct($storage, $network, $logger) {
+    function __construct(GSB_IStorage $storage, GSB_Request $network, GSB_Logger $logger) {
         $this->store = $storage;
         $this->request = $network;
         $this->log = $logger;

@@ -17,7 +17,7 @@ class GSB_Client {
     /** Constructor
      *
      */
-    function __construct($storage, $network, $logger) {
+    function __construct(GSB_IStorage $storage, GSB_Request $network, GSB_Logger $logger) {
         $this->store = $storage;
         $this->gsb   = $network;
         $this->log   = $logger;
